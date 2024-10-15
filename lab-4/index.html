@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Cricket</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        body, footer {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            background-color: #2980b9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        h1:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #2980b9;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 20px;
+            padding: 0 10px;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style-type: square;
+            margin: 20px 0;
+            padding-left: 40px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #34495e;
+        }
+
+        footer {
+            background-color: #2980b9;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+            font-size: 0.9em;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #1abc9c;
+        }
+
+        p.highlight {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 5px solid #2980b9;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2::before {
+            content: "⚡ ";
+            color: #2980b9;
+        }
+
+        button {
+            background-color: #2980b9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #1abc9c;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #2980b9;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        @media (max-width: 768px) {
+            body, footer {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fantasy Cricket</h1>
+
+    <h2>Abstract</h2>
+    <p class="highlight">Cricket is increasing its fans day by day. Nowadays lots of online cricket
+        games are found on the internet. <b>"Fantasy-cricket"</b> is an online application
+        where cricket lovers can predict the best XI among the two teams playing
+        in a cricket match and earn points accordingly. This system will make the user
+        select the team and also earn points from the winning teams. The system is
+        written in PHP and MYSQL.</p>
+
+    <h2>Introduction</h2>
+    <p>Cricket has admirers all over the world, and the number is increasing daily. Fans
+        love predicting scores before games. However, this may seem like <b>"betting"</b>, 
+        which is illegal in many parts of the world. Fantasy Cricket provides a legal alternative
+        for fans to engage, showcase their knowledge, and enjoy the sport.</p>
+
+    <h2>Requirement Analysis</h2>
+    <p>Fans can build a virtual team of real cricket players and earn points depending on 
+        how these players perform in real-life matches.</p>
+
+    <h2>Functional Requirements</h2>
+    <ul>
+        <li>Schedule match</li>
+        <li>User login</li>
+        <li>User logout</li>
+        <li>Update</li>
+        <li>View points</li>
+    </ul>
+
+    <h2>Non-Functional Requirements</h2>
+    <ul>
+        <li>Performance Requirements</li>
+        <li>Safety Requirements</li>
+        <li>Product Security Requirements</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>Fantasy Cricket provides entertainment to sports admirers, allowing fans to build virtual teams, score points based on real-life performance, and compete with others.</p>
+
+    <h2>Addendum</h2>
+    <ul>
+        <li><code>&lt:!DOCTYPE html&gt;</code>: Defines the document type as HTML.</li>
+        <li><code>&lt:html&gt;</code>: Root element of an HTML document.</li>
+        <li><code>&lt:head&gt;</code>: Contains metadata like title, links, and styles.</li>
+        <li><code>&lt:meta charset="UTF-8"&gt;</code>: Specifies character encoding.</li>
+        <li><code>&lt:meta name="viewport"&gt;</code>: Ensures responsive design for mobile devices.</li>
+        <li><code>&lt:body&gt;</code>: Contains the content of the webpage.</li>
+        <li><code>&lt:h1&gt;</code>: Main title of the website.</li>
+        <li><code>&lt:h2&gt;</code>: Subheadings for sections.</li>
+        <li><code>&lt:p&gt;</code>: Represents a paragraph.</li>
+        <li><code>&lt:ul&gt;</code>: Used for listing items.</li>
+        <li><code>&lt:footer&gt;</code>: Displays footer information.</li>
+        <li><code>&lt:script&gt;</code>: Displays last modified date.</li>
+    </ul>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+
+</body>
+</html>
