@@ -8,7 +8,7 @@
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f4;
+            background-color: #e0f7fa; /* Light cyan background */
             margin: 0;
             padding: 0;
             transition: all 0.3s ease-in-out;
@@ -18,21 +18,20 @@
             max-width: 1200px;
             margin: auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #ffffff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
 
         h1, h2 {
-            color: #333;
             text-align: center;
             margin-top: 10px;
         }
 
         h1 {
             font-size: 2.5em;
-            color: #2c3e50;
-            background-color: #2980b9;
+            color: #ffffff;
+            background-color: #006064; /* Teal background for the header */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -45,17 +44,20 @@
 
         h2 {
             font-size: 2em;
-            color: #2980b9;
+            color: #00796b; /* Deep teal for subheadings */
             margin-bottom: 10px;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         }
 
         p {
             font-size: 1.1em;
-            color: #555;
+            color: #004d40; /* Dark teal for paragraph text */
             margin-bottom: 20px;
             padding: 0 10px;
             line-height: 1.8;
+            background-color: #e0f2f1; /* Light teal background for paragraphs */
+            border-left: 5px solid #00796b; /* Border to match subheadings */
+            padding: 15px;
         }
 
         ul {
@@ -67,11 +69,14 @@
         ul li {
             margin-bottom: 10px;
             font-size: 1.1em;
-            color: #34495e;
+            color: #00695c; /* Slightly darker teal for list items */
+            background-color: #b2dfdb; /* Light teal for list background */
+            padding: 10px;
+            border-radius: 5px;
         }
 
         footer {
-            background-color: #2980b9;
+            background-color: #004d40; /* Dark teal footer */
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -86,30 +91,30 @@
         }
 
         a {
-            color: #2980b9;
+            color: #004d40;
             text-decoration: none;
             font-weight: bold;
         }
 
         a:hover {
             text-decoration: underline;
-            color: #1abc9c;
+            color: #009688; /* Bright teal for link hover */
         }
 
         p.highlight {
-            background-color: #f9f9f9;
+            background-color: #b2dfdb; /* Light teal highlight */
             padding: 15px;
-            border-left: 5px solid #2980b9;
+            border-left: 5px solid #00796b;
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
         }
 
         h2::before {
             content: "⚡ ";
-            color: #2980b9;
+            color: #00796b;
         }
 
         button {
-            background-color: #2980b9;
+            background-color: #00796b; /* Teal button */
             color: white;
             padding: 10px 20px;
             border: none;
@@ -119,7 +124,7 @@
         }
 
         button:hover {
-            background-color: #1abc9c;
+            background-color: #004d40; /* Dark teal on hover */
         }
 
         table {
@@ -134,12 +139,12 @@
         }
 
         th {
-            background-color: #2980b9;
+            background-color: #00796b; /* Teal table header */
             color: white;
         }
 
         td {
-            background-color: #f9f9f9;
+            background-color: #e0f2f1; /* Light teal for table cells */
         }
 
         @media (max-width: 768px) {
@@ -200,18 +205,18 @@
 
     <h2>Addendum</h2>
     <ul>
-        <li><code>&lt:!DOCTYPE html&gt;</code>: Defines the document type as HTML.</li>
-        <li><code>&lt:html&gt;</code>: Root element of an HTML document.</li>
-        <li><code>&lt:head&gt;</code>: Contains metadata like title, links, and styles.</li>
-        <li><code>&lt:meta charset="UTF-8"&gt;</code>: Specifies character encoding.</li>
-        <li><code>&lt:meta name="viewport"&gt;</code>: Ensures responsive design for mobile devices.</li>
-        <li><code>&lt:body&gt;</code>: Contains the content of the webpage.</li>
-        <li><code>&lt:h1&gt;</code>: Main title of the website.</li>
-        <li><code>&lt:h2&gt;</code>: Subheadings for sections.</li>
-        <li><code>&lt:p&gt;</code>: Represents a paragraph.</li>
-        <li><code>&lt:ul&gt;</code>: Used for listing items.</li>
-        <li><code>&lt:footer&gt;</code>: Displays footer information.</li>
-        <li><code>&lt:script&gt;</code>: Displays last modified date.</li>
+        <li><code>&lt;!DOCTYPE html&gt;</code>: Defines the document type as HTML.</li>
+        <li><code>&lt;html&gt;</code>: Root element of an HTML document.</li>
+        <li><code>&lt;head&gt;</code>: Contains metadata like title, links, and styles.</li>
+        <li><code>&lt;meta charset="UTF-8"&gt;</code>: Specifies character encoding.</li>
+        <li><code>&lt;meta name="viewport"&gt;</code>: Ensures responsive design for mobile devices.</li>
+        <li><code>&lt;body&gt;</code>: Contains the content of the webpage.</li>
+        <li><code>&lt;h1&gt;</code>: Main title of the website.</li>
+        <li><code>&lt;h2&gt;</code>: Subheadings for sections.</li>
+        <li><code>&lt;p&gt;</code>: Represents a paragraph.</li>
+        <li><code>&lt;ul&gt;</code>: Used for listing items.</li>
+        <li><code>&lt;footer&gt;</code>: Displays footer information.</li>
+        <li><code>&lt;script&gt;</code>: Displays last modified date.</li>
     </ul>
 
     <footer>
