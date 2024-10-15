@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Cricket</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #e0f7fa; /* Light cyan background */
+            margin: 0;
+            padding: 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        body, footer {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #ffffff;
+            background-color: #006064; /* Teal background for the header */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        h1:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #00796b; /* Deep teal for subheadings */
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #004d40; /* Dark teal for paragraph text */
+            margin-bottom: 20px;
+            padding: 0 10px;
+            line-height: 1.8;
+            background-color: #e0f2f1; /* Light teal background for paragraphs */
+            border-left: 5px solid #00796b; /* Border to match subheadings */
+            padding: 15px;
+        }
+
+        ul {
+            list-style-type: square;
+            margin: 20px 0;
+            padding-left: 40px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #00695c; /* Slightly darker teal for list items */
+            background-color: #b2dfdb; /* Light teal for list background */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #004d40; /* Dark teal footer */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+            font-size: 0.9em;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        a {
+            color: #004d40;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #009688; /* Bright teal for link hover */
+        }
+
+        p.highlight {
+            background-color: #b2dfdb; /* Light teal highlight */
+            padding: 15px;
+            border-left: 5px solid #00796b;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2::before {
+            content: "⚡ ";
+            color: #00796b;
+        }
+
+        button {
+            background-color: #00796b; /* Teal button */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #004d40; /* Dark teal on hover */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #00796b; /* Teal table header */
+            color: white;
+        }
+
+        td {
+            background-color: #e0f2f1; /* Light teal for table cells */
+        }
+
+        @media (max-width: 768px) {
+            body, footer {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fantasy Cricket</h1>
+
+    <h2>Abstract</h2>
+    <p class="highlight">Cricket is increasing its fans day by day. Nowadays lots of online cricket
+        games are found on the internet. <b>"Fantasy-cricket"</b> is an online application
+        where cricket lovers can predict the best XI among the two teams playing
+        in a cricket match and earn points accordingly. This system will make the user
+        select the team and also earn points from the winning teams. The system is
+        written in PHP and MYSQL.</p>
+
+    <h2>Introduction</h2>
+    <p>Cricket has admirers all over the world, and the number is increasing daily. Fans
+        love predicting scores before games. However, this may seem like <b>"betting"</b>, 
+        which is illegal in many parts of the world. Fantasy Cricket provides a legal alternative
+        for fans to engage, showcase their knowledge, and enjoy the sport.</p>
+
+    <h2>Requirement Analysis</h2>
+    <p>Fans can build a virtual team of real cricket players and earn points depending on 
+        how these players perform in real-life matches.</p>
+
+    <h2>Functional Requirements</h2>
+    <ul>
+        <li>Schedule match</li>
+        <li>User login</li>
+        <li>User logout</li>
+        <li>Update</li>
+        <li>View points</li>
+    </ul>
+
+    <h2>Non-Functional Requirements</h2>
+    <ul>
+        <li>Performance Requirements</li>
+        <li>Safety Requirements</li>
+        <li>Product Security Requirements</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>Fantasy Cricket provides entertainment to sports admirers, allowing fans to build virtual teams, score points based on real-life performance, and compete with others.</p>
+
+    <h2>Addendum</h2>
+    <ul>
+        <li><b>Color Scheme</b>: I chose a teal and cyan color palette because these tones evoke feelings of trust and calmness. The light cyan background adds brightness, while darker teals provide contrast and clarity. This consistency in shades establishes a clean and cohesive look.</li>
+        <li><b>Typography</b>: Arial, sans-serif was selected for its readability and familiarity across devices. The font size for body text is set to 1.1em for improved legibility, while headings use larger sizes to create a clear hierarchy.</li>
+        <li><b>Heading Sizes</b>: The <code>&lt;h1&gt;</code> tag is used for the main title with a font size of 2.5em, while <code>&lt;h2&gt;</code> tags are used for subheadings at 2em. This difference establishes a visual hierarchy, making the most important information stand out.</li>
+        <li><b>Margin and Padding</b>: I implemented consistent margins and padding throughout the document to ensure whitespace enhances readability. The body and footer have a margin of auto for centering, while individual sections have specific padding to separate content effectively.</li>
+        <li><b>Visual Effects</b>: Subtle hover effects on headings, buttons, and links introduce dynamism without distraction. These effects improve interactivity, making the page feel more responsive.</li>
+        <li><b>Content Sections</b>: Light backgrounds for paragraphs and list items improve readability, breaking up the content while drawing attention to key areas without overwhelming the viewer.</li>
+        <li><b>Borders and Shadows</b>: The use of soft box shadows and rounded corners adds polish and depth to the content, creating a structured and professional appearance.</li>
+    </ul>
+
+    <h2>HTML Abuse</h2>
+    <ul>
+        <li>I originally used the <code>&lt;h2&gt;</code> tag for the title of my essay because I felt it looked better. However, I changed it to an <code>&lt;h1&gt;</code> tag to correctly reflect its importance as the highest-level heading on the page.</li>
+    </ul>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
