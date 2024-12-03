@@ -6,25 +6,6 @@
     <title>Secure Form Submission</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif; /* Change font to Arial */
-        }
-        .hidden {
-            display: none;
-        }
-        .container {
-            text-align: center;
-            margin: 20px auto;
-            max-width: 500px;
-        }
-        #addendum {
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #333;
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
     <!-- Form Container -->
@@ -52,7 +33,14 @@
 
             <button type="submit">Submit</button>
         </form>
+        <div id="addendum" class="container">
+            <p><strong>Addendum:</strong> This web form includes enhanced validation for the first name, last name, and password fields. 
+                It ensures data accuracy and strengthens security by checking the presence of special characters in passwords, 
+                preventing numbers in names, and enforcing a minimum password length of 8 characters. 
+                Please ensure all fields are filled out correctly before submitting your form.</p>
+        </div>
     </div>
+    
 
     <!-- Success Message Container -->
     <div id="successContainer" class="container hidden">
@@ -60,16 +48,8 @@
             <h1>Thank You!</h1>
         </header>
         <main>
-            <p>Your form has been successfully submitted.</p>
+            <p>Your form has been successfully submitted. Thank you for providing your details.</p>
         </main>
-    </div>
-
-    <!-- Addendum Section -->
-    <div id="addendum" class="container">
-        <p><strong>Note:</strong> This web form includes enhanced validation for the first name, last name, and password fields. 
-            It ensures data accuracy and strengthens security by checking the presence of special characters in passwords, 
-            preventing numbers in names, and enforcing a minimum password length of 8 characters. 
-            Please ensure all fields are filled out correctly before submitting your form.</p>
     </div>
 
     <script src="script.js"></script>
