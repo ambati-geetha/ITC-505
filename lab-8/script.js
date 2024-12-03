@@ -1,15 +1,19 @@
-// Function to validate form fields
+// Form validation and success page transition
 function validateForm() {
-  // Get the form values
   const firstName = document.getElementById("firstName").value;
   const lastName = document.getElementById("lastName").value;
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
   const confirmPassword = document.getElementById("confirmPassword").value;
 
-  // Check if fields are empty
-  if (!firstName || !lastName || !email || !password || !confirmPassword) {
-      alert("All fields must be filled out.");
+  // Validate first name and last name to ensure they do not contain numbers
+  const namePattern = /^[A-Za-z]+$/;
+  if (!namePattern.test(firstName)) {
+      alert("First Name must not contain numbers or special characters.");
+      return false;
+  }
+  if (!namePattern.test(lastName)) {
+      alert("Last Name must not contain numbers or special characters.");
       return false;
   }
 
@@ -20,25 +24,27 @@ function validateForm() {
       return false;
   }
 
-  // Check if passwords match
-  if (password !== confirmPassword) {
-      alert("Passwords do not match.");
+  // Validate password: should contain at least one lowercase, one uppercase, one number, and one special character
+  const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+  if (!passwordPattern.test(password)) {
+      alert("Password must contain at least one lowercase letter, one uppercase letter, one number, and one special character.");
       return false;
   }
 
-  // XSS Protection: sanitize inputs
-  document.getElementById("firstName").value = sanitizeInput(firstName);
-  document.getElementById("lastName").value = sanitizeInput(lastName);
-  document.getElementById("email").value = sanitizeInput(email);
-  document.getElementById("password").value = sanitizeInput(password);
-  document.getElementById("confirmPassword").value = sanitizeInput(confirmPassword);
+  // Check if passwords match
+  if (password !== confirmPassword) {
+      alert("Passwords do not match. Please try again.");
+      return false;
+  }
 
-  return true;  // Allow form submission
+  // Hide form and show success message
+  document.getElementById('formContainer').classList.add('hidden');
+  document.getElementById('successContainer').classList.remove('hidden');
+  return false; // Prevent actual form submission for this demo
 }
 
-// Function to sanitize input (XSS Prevention)
-function sanitizeInput(input) {
-  const div = document.createElement('div');
-  div.textContent = input;
-  return div.innerHTML;  // Returns sanitized input
+// Function to return to form (optional)
+function showForm() {
+  document.getElementById('formContainer').classList.remove('hidden');
+  document.getElementById('successContainer').classList.add('hidden');
 }
