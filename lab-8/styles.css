@@ -1,88 +1,70 @@
-/* Global Styling */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial', sans-serif; /* Change font to Arial */
     margin: 0;
-    padding: 20px;
-    background: linear-gradient(135deg, #f1f2f6, #ffffff);
-    color: #333;
+    padding: 0;
+    background-color: #e0f7fa; /* Light blue background color */
+    display: flex;
+    justify-content: center; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+    min-height: 100vh; /* Ensure full height of viewport */
+    flex-direction: column; /* Ensure vertical stacking */
 }
 
-/* Header Styling */
-header h1 {
-    text-align: center;
-    color: #34495e;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 25px;
-    border-bottom: 4px solid #2980b9;
-    padding-bottom: 12px;
-    font-weight: 600;
-    font-size: 2rem;
-}
-
-/* Form Styling */
 form {
-    max-width: 550px;
-    margin: 40px auto;
-    padding: 40px;
-    border: 1px solid #ddd;
-    background-color: #ffffff;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
-    border-radius: 12px;
-}
-
-/* Label Styling */
-label {
-    display: block;
-    margin: 15px 0 8px;
-    font-weight: 600;
-    color: #2c3e50;
-    font-size: 1.1rem;
-}
-
-/* Input Fields Styling */
-input {
-    width: 100%;
-    padding: 14px;
-    margin-bottom: 22px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    font-size: 1rem;
-    background-color: #f9f9f9;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
 }
 
-/* Input Focus Styling */
-input:focus {
-    outline: none;
-    border-color: #3498db;
-    box-shadow: 0 0 8px 3px rgba(52, 152, 219, 0.3);
-}
-
-/* Button Styling */
-button {
+label {
     display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
     width: 100%;
-    padding: 16px;
-    background-color: #2980b9;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
     color: white;
-    font-size: 1.1rem;
-    font-weight: 600;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0px 6px 14px rgba(52, 152, 219, 0.25);
+    width: 100%;
 }
 
-/* Button Hover Effect */
 button:hover {
-    background-color: #1f6698;
-    transform: scale(1.04);
+    background-color: #45a049;
 }
 
-/* Button Active Effect */
-button:active {
-    background-color: #1a5678;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
+
+#addendum {
+    margin-top: 20px;
+    text-align: center; /* Center align addendum text */
+    font-size: 0.9em;
+    color: #333;
 }
