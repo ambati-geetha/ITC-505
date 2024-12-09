@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lights Out Game</title>
+  <link rel="stylesheet" href="lightsout.css">
+</head>
+<body>
+  <h1>Lights Out Game</h1>
+  <div id="game-board"></div>
+  <button id="reset-button">Reset</button>
+  <footer>
+    <p>Last updated: 
+      <span id="lastModified"></span>
+    </p>
+    <h2>Addendum</h2>
+    <ul>
+        <li>The *Lights Out Game* was developed as an interactive and visually engaging web-based game where players attempt to turn off all the lights on a grid. The project was created using HTML, CSS, and JavaScript, focusing on responsive design and dynamic interactions.</li>
+        <li>During the design process:
+            <ul>
+                <li>I opted for a simple and clean layout with a soft purple background to create a visually calming environment.</li>
+                <li>CSS grid was chosen to construct the game board due to its ease of implementation and flexibility.</li>
+                <li>The interactive elements, such as the grid cells and reset button, were styled with hover effects and transitions to enhance user engagement.</li>
+            </ul>
+        </li>
+        <li>Challenges faced:
+            <ul>
+                <li>Implementing the logic to correctly toggle the lights when a grid cell is clicked required careful management of adjacent elements' states.</li>
+                <li>This challenge was overcome by breaking the problem into smaller tasks, such as mapping grid positions and debugging interactions incrementally.</li>
+            </ul>
+        </li>
+        <li>Insights gained:
+            <ul>
+                <li>Understanding the importance of modular JavaScript code and the value of thorough planning before implementation.</li>
+                <li>The experience reinforced the significance of user-centered design, ensuring that interactive elements are both functional and aesthetically pleasing.</li>
+            </ul>
+        </li>
+    </ul>
+</footer>
+
+  <script src="lightsout.js"></script>
+  <script type="text/javascript">
+    var x = document.lastModified;
+    document.getElementById('lastModified').textContent = x;
+  </script>
+</body>
+</html>
