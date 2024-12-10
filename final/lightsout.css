@@ -4,15 +4,15 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #f1f8f6; /* Light greenish background */
+  color: #2c6b4f; /* Dark green text */
   line-height: 1.6;
 }
 
 /* Headings */
 h1 {
   margin-top: 20px;
-  color: #444;
+  color: #1e4c31; /* Darker green for headings */
   font-size: 2em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -25,7 +25,7 @@ h1 {
   justify-content: center;
   margin: 20px auto;
   padding: 10px;
-  background-color: #e6e6e6;
+  background-color: #3c9b76; /* Dark green background for the board */
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -34,8 +34,8 @@ h1 {
 .square {
   width: 80px;
   height: 80px;
-  border: 1px solid #ccc;
-  background-color: black;
+  border: 1px solid #6ba27a; /* Lighter green border */
+  background-color: #1e4c31; /* Dark green for inactive squares */
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
   border-radius: 5px;
@@ -43,12 +43,12 @@ h1 {
 
 .square:hover {
   transform: scale(1.1);
-  background-color: #444;
+  background-color: #4b9e73; /* Lighter green on hover */
 }
 
 .square.is-off {
-  background-color: white;
-  border-color: #aaa;
+  background-color: white; /* White for the active state */
+  border-color: #2c6b4f; /* Dark green border when off */
 }
 
 /* Buttons */
@@ -57,7 +57,7 @@ button {
   font-size: 16px;
   cursor: pointer;
   color: white;
-  background-color: #007bff;
+  background-color: #2c6b4f; /* Dark green background for buttons */
   border: none;
   border-radius: 5px;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -65,19 +65,19 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #1e4c31; /* Darker green on hover */
   transform: scale(1.05);
 }
 
 button:active {
-  background-color: #003f8a;
+  background-color: #1b402a; /* Even darker green when active */
 }
 
 /* Footer Styling */
 footer {
   margin-top: 20px;
   padding: 10px 0;
-  background-color: #333;
+  background-color: #1e4c31; /* Dark green background for footer */
   color: white;
   font-size: 0.9em;
   box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
